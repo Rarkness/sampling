@@ -10,11 +10,14 @@ Modify the number of repetitions in the simulation to 100 (from the original 100
 
 Alter the code so that it is reproducible. Describe the changes you made to the code and how they affected the reproducibility of the script file. The output does not need to match Whitby’s original blogpost/graphs, it just needs to produce the same output when run multiple times
 
-# Author: YOUR NAME
+# Author: Rarkness (Rick)
 
 ```
-Please write your explanation here...
+Sampling is happening for the infection stage. Everyone at an event has a 10% chance of getting infected. Then there’s tracing; the infected people have a 20% chance of being traced. If two or more cases get traced from the same event, they trace everyone from that event and find all the infections. The sampling frame is all 1000 people, 200 at weddings, 800 at brunches. Since weddings are easier to trace, they end up overrepresented in the data, even if brunches are spreading more. 
 
+Yes, the code appear to reproduce the graphs from the original blog post.
+
+If you kept running the script over and over, the graphs would look a bit different each time because it’s random who gets infected and who gets traced. And since it’s only running 100 times instead of 1000, the results change more. You’ll still see weddings, but the shape of the graph changes. It’s not consistent unless you set a random seed, so I added np.random.seed. Now, every time you run it, you’ll get the same graph.
 ```
 
 
