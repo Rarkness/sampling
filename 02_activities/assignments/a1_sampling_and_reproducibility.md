@@ -21,6 +21,34 @@ If you kept running the script over and over, the graphs would look a bit differ
 ```
 
 
+
+
+
+
+
+YOU WROTE:
+Please address the following changes/additions:
+
+Please Describe in words the:
+
+    sampling procedure
+    referencing the functions used
+    any underlying distributions involved, and how these relate to the procedure outlined in the blog post
+
+If you take a closer look you should notice differences between your code and the original blog post. Please comment on this
+
+MY ANSWER TO THIS:
+
+So, the way the sampling works in the code is pretty straightforward. First, each person has a 10% chance of getting infected, then if they’re infected, there’s a 20% chance they get traced. If 2 or more traced cases are from the same event, everyone at that event gets traced. It’s mostly random yes/no checks, except for that last part, which is more like a rule kicking in. This kind of lines up with the blog’s point about weddings being easier to trace, but there’s a big difference the code treats all weddings and all brunches like two big groups, instead of lots of smaller, separate events like the blog was talking about. So, it kind of misses the point about small brunches being harder to trace, and it probably makes weddings look even more important than they actually are.
+
+
+
+
+
+
+
+
+
 ## Criteria
 
 |Criteria|Complete|Incomplete|
